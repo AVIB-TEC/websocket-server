@@ -1,4 +1,7 @@
 # websocket-server
+[![Docker Image CI](https://github.com/AVIB-TEC/websocket-server/actions/workflows/docker-image.yml/badge.svg)](https://github.com/AVIB-TEC/websocket-server/actions/workflows/docker-image.yml)
+[![Node.js CI](https://github.com/AVIB-TEC/websocket-server/actions/workflows/node.js.yml/badge.svg)](https://github.com/AVIB-TEC/websocket-server/actions/workflows/node.js.yml)
+
 A websocket server in NodeJS used to communicate the plugins with the web page
 
 ## Instructions
