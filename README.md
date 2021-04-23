@@ -37,3 +37,6 @@ On the above code snippet is where you can add the branch names for the action t
 If you want to run the container in detach mode then you can run this command.
 
 `sudo docker run -d -p 1617:1617 olbapd/avib-server --name avib-server`
+
+## Updateing Image
+Since the repository is configured with CD with docker, once a commit is pushed to remote an action will execute to update the docker image. 
