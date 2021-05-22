@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: "avibcluster-c19d"
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: "avibcluster-c19d"
+  template:
+    metadata:
+      labels:
+        app: "avibcluster-c19d"
+    spec:
+      containers:
+        - name: "avibcluster-c19d"
+          image: "avibcontainerregistry.azurecr.io/avibclusterc19d"
+          ports:
+          - containerPort: 1617

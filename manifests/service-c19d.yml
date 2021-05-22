@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+    name: "avibcluster-c19d"
+    labels:
+        app: "avibcluster-c19d"
+spec:
+    type: LoadBalancer
+    ports:
+    - port: 1617
+      targetPort: 1617
+      protocol: TCP
+      name: http
+    selector:
+        app: "avibcluster-c19d"
